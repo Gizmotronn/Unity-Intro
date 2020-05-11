@@ -39,7 +39,7 @@ There's a few options for what we can do with the material:
   * Smoothness scale = `0`: no reflection applied
   * Smoothness scale = `>0`: skybox affects 
 
-
+![](https://user-images.githubusercontent.com/31812229/81529673-e9300200-9391-11ea-8bd7-f7f09b7be7c4.JPG)
 
 **Creating & adding textures:**
 
@@ -49,11 +49,13 @@ There's a few options for what we can do with the material:
 
 We adding a tile image as the texture (tiles/rows of rock/bricks):
 
-
+![](https://user-images.githubusercontent.com/31812229/81529665-e59c7b00-9391-11ea-85f1-a4499fe40fa2.JPG)
 
 * Increasing `tiling` in the `material inspector` adds more rows
   * `x` and `y` values for this (across and up/down)
 * Scrolling textures: `offset` (can be affected **in script**)
+
+![](https://user-images.githubusercontent.com/31812229/81529672-e7fed500-9391-11ea-88a6-4664ddb77278.JPG)
 
 * Adding depth:
   * `Normal Map`, used the `Stones_Normal.jpg` file in `Assets/Textures` 
