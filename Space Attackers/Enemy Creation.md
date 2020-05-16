@@ -183,6 +183,24 @@ Destroying the missile prefab
 
 
 
+#### Rest of Part 7 --> Enemy Shooting
+
+* You can select a series of game objects (for example, all of the `enemies` (not the gameobject called "enemies", but the gameobject*s* called "Enemy", "Enemy (1)", etc) and change certain attributes, like their scaling/transform
+
+
+
+**Player.cs**
+
+```csharp
+..... (line 11)
+    public GameObject missilePrefab;
+	public GameObject explosionPrefab; 
+```
+
+https://academy.zenva.com/lesson/enemies-shooting/
+
+
+
 #### Full script:
 
 [`gamecontroller.cs`]([https://github.com/Gizmotronn/space-attackers/edit/master/Space%20Attackers/Assets/Project/Scripts/GameController.cs](https://github.com/Gizmotronn/space-attackers/edit/master/Space Attackers/Assets/Project/Scripts/GameController.cs)) 
