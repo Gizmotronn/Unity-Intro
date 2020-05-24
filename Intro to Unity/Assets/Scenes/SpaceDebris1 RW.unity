@@ -306,7 +306,7 @@ PrefabInstance:
     - target: {fileID: 6541986617138897597, guid: bf6368acf43402c4788e3d0c42580e28,
         type: 3}
       propertyPath: m_Name
-      value: hextraction_pod
+      value: Spaceship
       objectReference: {fileID: 0}
     - target: {fileID: 7823482569281409198, guid: bf6368acf43402c4788e3d0c42580e28,
         type: 3}
