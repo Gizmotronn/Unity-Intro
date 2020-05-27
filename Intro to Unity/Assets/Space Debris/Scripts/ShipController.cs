@@ -33,28 +33,28 @@ public class ShipController : MonoBehaviour
      */
     void Update()
     {
-        if (canMove)
+        if (canMove) 
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow)) // If the user/player presses the up arrow
             {
-                moveDirection.y = 1;
+                moveDirection.y = 1; // vector3 # the variable moveDirection is set to 1 in the y direction, so it moves up by 1 on the y-axis
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
-                moveDirection.y = -1;
+                moveDirection.y = -1; // vector3 # the variable moveDirection is set to -1 in the y direction, so it moves down by 1 on the y-axis
             }
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                transform.Rotate (0, -90 * Time.deltaTime * rotationSpeed, 0);
+            if (Input.GetKey(KeyCode.LeftArrow)) // If the left arrow is pressed down
+            {                                                                                                                                   // that this script is attached to
+                transform.Rotate (0, -90 * Time.deltaTime * rotationSpeed, 0); // sets the "rotate" value in the "transform" area of the gameObject ^^ to "0, -90 * and the time that the key is held down multiplied by the rotation speed, & 0 /#/ Essentially changing the y rotation value and therefore the direction that the ship faces 
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                transform.Rotate (0, 90 * Time.deltaTime * rotationSpeed, 0);
+                transform.Rotate (0, 90 * Time.deltaTime * rotationSpeed, 0); // Same as above, but with 90 instead of -90 for a clockwise/anticlockwise rotation
             }
-            Vector3 newPosition = transform.position;
-            newPosition += moveDirection.y * transform.forward * moveSpeed * Time.deltaTime;
-            newPosition.z = startPosition.z;
-            transform.position = newPosition;
+            Vector3 newPosition = transform.position; // Vector 3 --> new variable called "newPosition" that is set to what the current "transform.position" is
+            newPosition += moveDirection.y * transform.forward * moveSpeed * Time.deltaTime; // ^^^^
+            newPosition.z = startPosition.z; // ^^
+            transform.position = newPosition; // ^
         }
     }
 
@@ -67,7 +67,7 @@ public class ShipController : MonoBehaviour
      */
     public void OnTriggerEnter(Collider collider)
     {
-        if (isAlive)
+        if (isAlive) // game loop, if true
         {
             SkinnedMeshRenderer[] renderers = GetComponentsInChildren<SkinnedMeshRenderer>();
             foreach (SkinnedMeshRenderer renderer in renderers)

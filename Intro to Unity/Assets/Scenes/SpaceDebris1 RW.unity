@@ -121,6 +121,40 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &200504401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6541986617138897597, guid: bf6368acf43402c4788e3d0c42580e28,
+    type: 3}
+  m_PrefabInstance: {fileID: 3019702294642618553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &200504402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200504401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97814edcf28e4f419c17149fe9ea3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 22
+  rotationSpeed: 2
+--- !u!114 &200504403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200504401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe370aa29963f744dab1dea818be75ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers:
+  - {fileID: 1669043267}
 --- !u!1 &1013238752
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +247,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!137 &1669043267 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1189786390622999607, guid: bf6368acf43402c4788e3d0c42580e28,
+    type: 3}
+  m_PrefabInstance: {fileID: 3019702294642618553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2018555991
 GameObject:
   m_ObjectHideFlags: 0
