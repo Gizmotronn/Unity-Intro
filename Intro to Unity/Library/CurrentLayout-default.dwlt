@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 1161
     height: 516
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -71,10 +71,10 @@ MonoBehaviour:
     y: 791
     width: 2743
     height: 516
-  m_MinSize: {x: 331, y: 271}
-  m_MaxSize: {x: 14001, y: 10021}
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 127
+  controlID: 16
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -96,10 +96,10 @@ MonoBehaviour:
     y: 30
     width: 3440
     height: 1307
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 18001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 16
+  controlID: 51
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,8 +145,8 @@ MonoBehaviour:
     y: 0
     width: 679
     height: 791
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -266,10 +266,10 @@ MonoBehaviour:
     y: 0
     width: 2743
     height: 1307
-  m_MinSize: {x: 402, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 40
+  controlID: 52
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -291,10 +291,10 @@ MonoBehaviour:
     y: 0
     width: 2743
     height: 791
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 41
+  controlID: 53
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -388,20 +388,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Space Debris/Sounds
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Space Debris/Sounds
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Git\Unity-Intro\Intro to Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48380000
-    m_LastClickedID: 14408
-    m_ExpandedIDs: 0000000036380000383800003a3800003c3800003e3800004038000000ca9a3b
+    m_SelectedIDs: 24350000
+    m_LastClickedID: 13604
+    m_ExpandedIDs: 00000000023500000435000006350000083500000a3500000c35000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -429,7 +429,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000036380000383800003a3800003c3800003e38000040380000
+    m_ExpandedIDs: 00000000023500000435000006350000083500000a3500000c350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -552,9 +552,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 763a0000
-      m_LastClickedID: 14966
-      m_ExpandedIDs: 4ed8ffff46ddffff72e0ffffdaeeffff
+      m_SelectedIDs: 46cfffff
+      m_LastClickedID: -12474
+      m_ExpandedIDs: c2ebffff10fbffff42fbffff62fbffff70fbffff5e330000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
