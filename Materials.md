@@ -57,3 +57,6 @@ We adding a tile image as the texture (tiles/rows of rock/bricks):
 
 * Adding depth:
   * `Normal Map`, used the `Stones_Normal.jpg` file in `Assets/Textures` 
+  
+  # Reviewing materials
+  https://share.clickup.com/t/h/1wxfhq/MCR5C8CIQI31RNG
