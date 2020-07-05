@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 129
+  controlID: 14
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1500
     height: 918
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 130
+  controlID: 15
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Materials/Challenge 2
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Materials/Challenge 2
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\droid\Unity-Intro\Intro to Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a350000
-    m_LastClickedID: 13690
-    m_ExpandedIDs: 000000006435000066350000683500006a3500006c35000000ca9a3b
+    m_SelectedIDs: 7e360000
+    m_LastClickedID: 13950
+    m_ExpandedIDs: 00000000ca330000cc330000ce330000d0330000d2330000dc33000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006435000066350000683500006a3500006c3500006e350000
+    m_ExpandedIDs: 00000000ca330000cc330000ce330000d0330000d2330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 08370000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 1ef9ffff28f9ffff70fbffff
+      m_SelectedIDs: 94c1ffff
+      m_LastClickedID: -15980
+      m_ExpandedIDs: 68d2ffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.8216152, y: 1.944493, z: -0.3552842}
+    m_Target: {x: -6.5874166, y: 4.5644426, z: -10.246998}
     speed: 2
-    m_Value: {x: -2.8216152, y: 1.944493, z: -0.3552842}
+    m_Value: {x: -6.5874166, y: 4.5644426, z: -10.246998}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,13 +612,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.014480166, y: -0.61183363, z: 0.011203701, w: 0.79077744}
+    m_Target: {x: -0.06879961, y: -0.8983366, z: 0.40636536, w: -0.15208597}
     speed: 2
-    m_Value: {x: 0.014463312, y: -0.61301774, z: 0.011225383, w: 0.78985703}
+    m_Value: {x: -0.06841584, y: -0.89795077, z: 0.4078145, w: -0.15063548}
   m_Size:
-    m_Target: 5.3366246
+    m_Target: 1.3150458
     speed: 2
-    m_Value: 5.636625
+    m_Value: -1.3150458
   m_Ortho:
     m_Target: 0
     speed: 2
