@@ -39,6 +39,8 @@ public class IonCannon : MonoBehaviour
     public AudioClip fireSound;
     private AudioSource audioSrc;
     private bool canShoot = true;
+    [SerializeField]
+    private float userScore;
 
     /**
      * Allow to enable and disable the IonCannon
@@ -70,6 +72,7 @@ public class IonCannon : MonoBehaviour
                 audioSrc.PlayOneShot(fireSound);
                 Rigidbody newBullet = Instantiate(bullet, transform.position, Quaternion.identity) as Rigidbody;
                 newBullet.velocity = transform.forward * 100.0f;
+                userScore = userScore + 1;
             }
         }
     }

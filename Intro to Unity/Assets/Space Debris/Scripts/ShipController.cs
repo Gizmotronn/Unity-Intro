@@ -1,45 +1,19 @@
-﻿/*
- * Copyright (c) 2019 Razeware LLC
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish, 
- * distribute, sublicense, create a derivative work, and/or sell copies of the 
- * Software in any work that is designed, intended, or marketed for pedagogical or 
- * instructional purposes related to programming, coding, application development, 
- * or information technology.  Permission for such use, copying, modification,
- * merger, publication, distribution, sublicensing, creation of derivative works, 
- * or sale is expressly withheld.
- *    
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ShipController : MonoBehaviour
 {
-    public float moveSpeed;
-    public float rotationSpeed;
-    private Vector3 startPosition;
-    private Quaternion startRotation;
+    public float moveSpeed; // Determines how fast the ship can move
+    public float rotationSpeed; // Determines how fast the ship can rotate
+    private Vector3 startPosition; // Sets the start position /#/ using the property Vector3 (will go through more tutorials regarding this later)
+    private Quaternion startRotation; 
     private Vector3 moveDirection;
-    private bool canMove = true;
-    private bool isAlive = true;
+    private bool canMove = true; // If false, we can't move the ship
+    private bool isAlive = true; // Like a loop in python, as long as this is true the game continues
+    [SerializeField]
+    private float userHealth = 10;
+    public Text Health; 
 
     // Use this for initialization
     /**
@@ -49,8 +23,10 @@ public class ShipController : MonoBehaviour
     void Start()
     {
         moveDirection = new Vector3();
-        startPosition = transform.position;
+        startPosition = transform.position; // In the "transform" area of the gameObject
         startRotation = transform.rotation;
+        Health = GetComponent<Text>();
+        Health.text = userHealth.ToString();
     }
 
     // Update is called once per frame
@@ -61,29 +37,33 @@ public class ShipController : MonoBehaviour
      */
     void Update()
     {
-        if (canMove)
+        if (canMove) 
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow)) // If the user/player presses the up arrow
             {
-                moveDirection.y = 1;
+                moveDirection.y = 1; // vector3 # the variable moveDirection is set to 1 in the y direction, so it moves up by 1 on the y-axis
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
-                moveDirection.y = -1;
+                moveDirection.y = -1; // vector3 # the variable moveDirection is set to -1 in the y direction, so it moves down by 1 on the y-axis
             }
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                transform.Rotate (0, -90 * Time.deltaTime * rotationSpeed, 0);
+            if (Input.GetKey(KeyCode.LeftArrow)) // If the left arrow is pressed down
+            {                                                                                                                                   // that this script is attached to
+                transform.Rotate (0, -90 * Time.deltaTime * rotationSpeed, 0); // sets the "rotate" value in the "transform" area of the gameObject ^^ to "0, -90 * and the time that the key is held down multiplied by the rotation speed, & 0 /#/ Essentially changing the y rotation value and therefore the direction that the ship faces 
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                transform.Rotate (0, 90 * Time.deltaTime * rotationSpeed, 0);
+                transform.Rotate (0, 90 * Time.deltaTime * rotationSpeed, 0); // Same as above, but with 90 instead of -90 for a clockwise/anticlockwise rotation
             }
-            Vector3 newPosition = transform.position;
-            newPosition += moveDirection.y * transform.forward * moveSpeed * Time.deltaTime;
-            newPosition.z = startPosition.z;
-            transform.position = newPosition;
+            Vector3 newPosition = transform.position; // Vector 3 --> new variable called "newPosition" that is set to what the current "transform.position" is
+            newPosition += moveDirection.y * transform.forward * moveSpeed * Time.deltaTime; // ^^^^
+            newPosition.z = startPosition.z; // ^^
+            transform.position = newPosition; // ^
         }
+        Health.text = "" + userHealth;
+ 
+                 if(userHealth <= 0)
+                 Destroy(gameObject);
     }
 
     /**
@@ -95,7 +75,7 @@ public class ShipController : MonoBehaviour
      */
     public void OnTriggerEnter(Collider collider)
     {
-        if (isAlive)
+        if (isAlive) // game loop, if true
         {
             SkinnedMeshRenderer[] renderers = GetComponentsInChildren<SkinnedMeshRenderer>();
             foreach (SkinnedMeshRenderer renderer in renderers)
@@ -104,6 +84,7 @@ public class ShipController : MonoBehaviour
             }
             canMove = false;
             isAlive = false;
+            userHealth = userHealth - 1;
             IonCannon ionCannon = gameObject.GetComponent<IonCannon>();
             if (ionCannon)
             {

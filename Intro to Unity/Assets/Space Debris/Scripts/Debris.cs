@@ -47,6 +47,8 @@ public class Debris : MonoBehaviour
     private bool isDestroyed = false;
     private RendererFade renderFade;
     private bool beganFade = false;
+    [SerializeField]
+    private float userScore = 0;
 
     // Use this for initialization
     void Start()
@@ -80,6 +82,7 @@ public class Debris : MonoBehaviour
             if (renderFade.IsComplete())
             {
                 Destroy(gameObject);
+                userScore = userScore + 1;
             }
         }
     }
@@ -94,6 +97,7 @@ public class Debris : MonoBehaviour
         {
             audioSrc.PlayOneShot(explosionSound);
             isDestroyed = true;
+            userScore = userScore + 1;
         }
     }
 }
