@@ -21,7 +21,7 @@ public class FirstScript : MonoBehaviour // Monobehaviour is a class created by 
     }
 }
 
-Create weapons
+// Create weapons
 public class Weapon
 {
     public string weaponName;
@@ -29,7 +29,7 @@ public class Weapon
 
     public void SetDamage  (int damageToSet) // Allow for the damage to be modified externally /#/ Function // can also add ", string damageType"
     {
-        damage = damageToSet
+        damage = damageToSet;
     } // void because not returning anything
 
     // Function to return to us the value of damage
