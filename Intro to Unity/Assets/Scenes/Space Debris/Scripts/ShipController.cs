@@ -11,6 +11,7 @@ public class ShipController : MonoBehaviour
     private Vector3 moveDirection;
     private bool canMove = true; // If false, we can't move the ship
     private bool isAlive = true; // Like a loop in python, as long as this is true the game continues
+
     [SerializeField]
     private float userHealth = 10;
     public Text Health; 
