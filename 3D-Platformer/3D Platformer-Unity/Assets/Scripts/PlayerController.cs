@@ -28,7 +28,13 @@ public class PlayerController : MonoBehaviour
         // Velocity
         Vector3 dir = new Vector3(xInput, 0, zInput) * moveSpeed;
         rig.velocity = dir;
-        // Manually set y direction
+        // Manually set y direction 
         dir.y = rig.velocity.y; // whatever the existing velocity is
+
+        Vector3 facingDir = new Vector3(xInput, 0, zInput); 
+        if(facingDir.magnitude > 0)
+        {
+            transform.forward = facingDir;
+        }
     }
 }
