@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed; // This will be set inside the Unity inspector for this object
+    public float jumpForce;
 
     private Rigidbody rig;
+
 
     void Awake () 
     {
@@ -17,6 +19,11 @@ public class PlayerController : MonoBehaviour
     void Update () // Called every frame
     {
         Move(); // Every frame we're calling `move`
+
+        if(Input.GetButtonDown("Jump"))
+        {
+            TryJump();
+        }
     }
 
     void Move () // To move the player
@@ -36,5 +43,10 @@ public class PlayerController : MonoBehaviour
         {
             transform.forward = facingDir;
         }
+    }
+
+    void TryJump () // We don't know if we are able to jump yet, hence the name "TryJump'
+    {
+        rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Adding force upwards
     }
 }
