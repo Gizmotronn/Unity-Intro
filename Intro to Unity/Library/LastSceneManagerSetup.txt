@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Materials.unity
+- path: Assets/Scenes/SpaceDebris1 RW.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
