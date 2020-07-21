@@ -47,6 +47,11 @@ public class PlayerController : MonoBehaviour
 
     void TryJump () // We don't know if we are able to jump yet, hence the name "TryJump'
     {
-        rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Adding force upwards
+        Ray ray = new Ray(transform.position, Vector3.down);
+
+        if(Physics.Raycast(ray, 0.7f))
+        {
+            rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Adding force upwards
+        }
     }
 }
