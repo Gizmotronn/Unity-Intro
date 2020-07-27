@@ -1,1 +1,34 @@
 https://share.clickup.com/t/h/20vaz2/5LHNZFEXAY3WF0F
+
+https://forums.acord.software/p/11-project-arcadia-brief
+https://github.com/irisdroidology/python-learning/issues/3
+
+Section 1
+Legal obligations when creating new software
+Software developers are legally obliged to follow the law of copyright and not copy work from other developers
+
+Software Licensing
+While Arcadia is mainly going to be a games network software that will be free and open-source, the application of Arcadia has more uses, such as gamification in corporate environments, and this is why I'll be going with the Commercial/Proprietery license, as I have plans to make the Arcadia software for corporate entities. Since we would be selling the rights to other companies, this form of Arcadia serves as a commercial/sale purpose. 
+Arcadia in the format that I am creating for this phase of the project is free and open-source, because my team believe that information wants to be free and by encouraging our users and other developers to improve the software, it means that the software can improve at a faster rate and there is no limiting access.
+
+Information/Australian Privacy Principles
+IPPs/APPs are interchangeable terms
+https://www.oaic.gov.au/privacy/australian-privacy-principles/read-the-australian-privacy-principles/
+
+Data Types
+Simple Data Types
+Integer
+An integer is a simple data type; it is a whole number with no decimals or fractions. An example would be the totalItemsOnScreen variable in GameManager.cs in Space Debris (see attached file). It has a name - totalItemsOnScreen, is an integer variable ( public int ) and has a whole number value that can be defined in the Unity inspector.
+https://app.clickup.com/t/20vaz2?comment=21768988
+
+Real/Floating Point  Number
+A float, aka floating point number, is a data type that represents any number. This number/value may be a whole number, or it may be a decimal. An example would be moveSpeed variable in PlayerController.cs in 3D-Platformer . It has a variable defined in the Unity inspector.
+https://app.clickup.com/t/20vaz2?comment=21769040
+
+Boolean 
+A boolean, aka bool, is a simple data type that has two values - true or false 
+An example would be fired in Player.cs in Space Attackers . 
+https://app.clickup.com/t/20vaz2?comment=21769070
+
+Character 
+A character is a simple data type that is just one (1) character from a keyboard. While there are no examples in my Unity projects, an example would be a variable called Character1 with a variable of h 
