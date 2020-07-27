@@ -21,3 +21,11 @@ public class Mover : MonoBehaviour
        //}
     }
 }
+
+/*GETKEYDOWN(A):
+    moveSpeed = -MoveSpeed 
+GETKEYDOWN(D):
+    if(moveSpeed <0)
+        modeSpeed = -MoveSpeed
+    if(moveSpeed >0)
+        moveSpeed = moveSpeed*/
