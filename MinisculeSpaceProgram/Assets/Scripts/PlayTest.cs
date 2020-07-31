@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayTest : MonoBehaviour
-{
+{/*
     public float moveSpeed; // This will be set inside the Unity inspector for this object
     public float jumpForce;
     private bool isJump;
@@ -64,5 +64,5 @@ public class PlayTest : MonoBehaviour
     int JumpCalculator () // Calculate Jump Force
     {
         jumpForce += 1;
-    }
+    }*/
 }
