@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Character // MonoBehaviour /-/ Now the player is also a character
 {
-    [SerializeField]
-    private float speed; // For move speed / Adjustible in Unity inspector /#/ Set to "10" in inspector
-    private Vector2 direction; // player direction
-
     // Start is called before the first frame update
     void Start()
     {
@@ -15,14 +11,12 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
         GetInput();
-        Move();
-    }
 
-    public void Move() {
-        transform.Translate(direction*speed*Time.deltaTime); // Time.deltaTime = time that has passed since the last update - same movement speed on all platforms/computers --> frames/updates per second
+        // Override Character.cs Update() for player movement
+        base.Update();
     }
 
     private void GetInput()
