@@ -1,0 +1,360 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2020-07-31T15:07:34.641+08:00
+  initializedAtString: 2020-07-31T15:03:36.825+08:00
+  entries:
+  - path: MinisculeSpaceProgram\Assets\Earth-Agency_alien.unity
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Assets\Earth-Agency_alien.unity
+    projectPath: Assets\Earth-Agency_alien.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Assets\Earth-Agency_alien.unity.meta
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Assets\Earth-Agency_alien.unity.meta
+    projectPath: Assets\Earth-Agency_alien.unity.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Assets\Scenes\Earth-Agency_alien.unity
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Assets\Scenes\Earth-Agency_alien.unity
+    projectPath: Assets\Scenes\Earth-Agency_alien.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: MinisculeSpaceProgram\Assets\Scenes\Earth-Agency_alien.unity.meta
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Assets\Scenes\Earth-Agency_alien.unity.meta
+    projectPath: Assets\Scenes\Earth-Agency_alien.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: MinisculeSpaceProgram\Library\ArtifactDB
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: MinisculeSpaceProgram\Library\Artifacts\04\048957150d3e60c72d0128960cec5f4c
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\Artifacts\04\048957150d3e60c72d0128960cec5f4c
+    projectPath: Library\Artifacts\04\048957150d3e60c72d0128960cec5f4c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Library\Artifacts\62\622002a72b3f2f9a6bf0f962eafc9d3c
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\Artifacts\62\622002a72b3f2f9a6bf0f962eafc9d3c
+    projectPath: Library\Artifacts\62\622002a72b3f2f9a6bf0f962eafc9d3c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Library\Artifacts\63\63cc36cde3b6f91cf444f5b6a3cf7c25
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\Artifacts\63\63cc36cde3b6f91cf444f5b6a3cf7c25
+    projectPath: Library\Artifacts\63\63cc36cde3b6f91cf444f5b6a3cf7c25
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Library\Artifacts\79\79fc092d0c0958bef00f11615468e643
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\Artifacts\79\79fc092d0c0958bef00f11615468e643
+    projectPath: Library\Artifacts\79\79fc092d0c0958bef00f11615468e643
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Library\Artifacts\a9\a972784bbece92856e88f2a8d8f4a068
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\Artifacts\a9\a972784bbece92856e88f2a8d8f4a068
+    projectPath: Library\Artifacts\a9\a972784bbece92856e88f2a8d8f4a068
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Library\Artifacts\db\dbef6943343baed110e465f0828ac719
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\Artifacts\db\dbef6943343baed110e465f0828ac719
+    projectPath: Library\Artifacts\db\dbef6943343baed110e465f0828ac719
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Library\EditorInstance.json
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: MinisculeSpaceProgram\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: MinisculeSpaceProgram\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: MinisculeSpaceProgram\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: MinisculeSpaceProgram\Library\SourceAssetDB
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: MinisculeSpaceProgram\Library\StateCache\Hierarchy\e3841b-mainStage.json
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Library\StateCache\Hierarchy\e3841b-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\e3841b-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: MinisculeSpaceProgram\Temp\UnityLockfile
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-102aa664fdeecb44c9d1bbd741323e7d
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-102aa664fdeecb44c9d1bbd741323e7d
+    projectPath: Temp\UnityTempFile-102aa664fdeecb44c9d1bbd741323e7d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-149c72dc333996541baee07ba05fd9db
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-149c72dc333996541baee07ba05fd9db
+    projectPath: Temp\UnityTempFile-149c72dc333996541baee07ba05fd9db
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-1b9a500039f4fd34fa37eed67f6f92bf
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-1b9a500039f4fd34fa37eed67f6f92bf
+    projectPath: Temp\UnityTempFile-1b9a500039f4fd34fa37eed67f6f92bf
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-2247e849469ba5540a1cb512374a39a2
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-2247e849469ba5540a1cb512374a39a2
+    projectPath: Temp\UnityTempFile-2247e849469ba5540a1cb512374a39a2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-2e33a49f9d3d6574aac9cf58c905643d
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-2e33a49f9d3d6574aac9cf58c905643d
+    projectPath: Temp\UnityTempFile-2e33a49f9d3d6574aac9cf58c905643d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-3888cfd4a49c30845ae92bad3418870b
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-3888cfd4a49c30845ae92bad3418870b
+    projectPath: Temp\UnityTempFile-3888cfd4a49c30845ae92bad3418870b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-436ba83f95ee7aa4eb75326bb39e95d3
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-436ba83f95ee7aa4eb75326bb39e95d3
+    projectPath: Temp\UnityTempFile-436ba83f95ee7aa4eb75326bb39e95d3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-44e0734ded8fa2a48b54a034b77ab6b5
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-44e0734ded8fa2a48b54a034b77ab6b5
+    projectPath: Temp\UnityTempFile-44e0734ded8fa2a48b54a034b77ab6b5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-5b392ab8eec7e91469b5edc700826cc6
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-5b392ab8eec7e91469b5edc700826cc6
+    projectPath: Temp\UnityTempFile-5b392ab8eec7e91469b5edc700826cc6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-66b310a7d06c4f04aa62feb039d7a205
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-66b310a7d06c4f04aa62feb039d7a205
+    projectPath: Temp\UnityTempFile-66b310a7d06c4f04aa62feb039d7a205
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-6f5c5835b063c9e4689392152d5b2453
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-6f5c5835b063c9e4689392152d5b2453
+    projectPath: Temp\UnityTempFile-6f5c5835b063c9e4689392152d5b2453
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-72a24fd9bba8d3547adf96ea54c4b3b4
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-72a24fd9bba8d3547adf96ea54c4b3b4
+    projectPath: Temp\UnityTempFile-72a24fd9bba8d3547adf96ea54c4b3b4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-8618e5dd1bdc15641846cc765b1e6d62
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-8618e5dd1bdc15641846cc765b1e6d62
+    projectPath: Temp\UnityTempFile-8618e5dd1bdc15641846cc765b1e6d62
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-88a87ba9b1f4459438915bfa79a4fac5
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-88a87ba9b1f4459438915bfa79a4fac5
+    projectPath: Temp\UnityTempFile-88a87ba9b1f4459438915bfa79a4fac5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-8db8b236637796e4b8bb96820c8d1bfd
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-8db8b236637796e4b8bb96820c8d1bfd
+    projectPath: Temp\UnityTempFile-8db8b236637796e4b8bb96820c8d1bfd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-8e0311de1331bb544a33e798e1f200da
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-8e0311de1331bb544a33e798e1f200da
+    projectPath: Temp\UnityTempFile-8e0311de1331bb544a33e798e1f200da
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-99976c5eb5e0bee49a3308b351861be9
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-99976c5eb5e0bee49a3308b351861be9
+    projectPath: Temp\UnityTempFile-99976c5eb5e0bee49a3308b351861be9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-9b2373600e89df240b79ba7d2bbe0eea
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-9b2373600e89df240b79ba7d2bbe0eea
+    projectPath: Temp\UnityTempFile-9b2373600e89df240b79ba7d2bbe0eea
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-a0ae6bf2a89ecda4986fb63fddeca7ec
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-a0ae6bf2a89ecda4986fb63fddeca7ec
+    projectPath: Temp\UnityTempFile-a0ae6bf2a89ecda4986fb63fddeca7ec
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-af2595abc79cf464f80da16c33a6a226
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-af2595abc79cf464f80da16c33a6a226
+    projectPath: Temp\UnityTempFile-af2595abc79cf464f80da16c33a6a226
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-af8e28379f498a246a6b88698ebe36e8
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-af8e28379f498a246a6b88698ebe36e8
+    projectPath: Temp\UnityTempFile-af8e28379f498a246a6b88698ebe36e8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-b9304b21b3ffac94898c6d4524a9b082
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-b9304b21b3ffac94898c6d4524a9b082
+    projectPath: Temp\UnityTempFile-b9304b21b3ffac94898c6d4524a9b082
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-bad81f878c3307d4ea934d6e2c939e37
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-bad81f878c3307d4ea934d6e2c939e37
+    projectPath: Temp\UnityTempFile-bad81f878c3307d4ea934d6e2c939e37
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-bbd79771ce5e5b34aa05e9d9a3392cf1
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-bbd79771ce5e5b34aa05e9d9a3392cf1
+    projectPath: Temp\UnityTempFile-bbd79771ce5e5b34aa05e9d9a3392cf1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-bc213eb867485c043a32014a80ca2c55
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-bc213eb867485c043a32014a80ca2c55
+    projectPath: Temp\UnityTempFile-bc213eb867485c043a32014a80ca2c55
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-bca51cc3e1423634fa234656675e054f
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-bca51cc3e1423634fa234656675e054f
+    projectPath: Temp\UnityTempFile-bca51cc3e1423634fa234656675e054f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-c500a7f23c7ed784b9d36d9dabcd38e5
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-c500a7f23c7ed784b9d36d9dabcd38e5
+    projectPath: Temp\UnityTempFile-c500a7f23c7ed784b9d36d9dabcd38e5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-c86f69975215f984897c430d86c5b5fb
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-c86f69975215f984897c430d86c5b5fb
+    projectPath: Temp\UnityTempFile-c86f69975215f984897c430d86c5b5fb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-d292684ce576fdc419bd0f14aa79af1a
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-d292684ce576fdc419bd0f14aa79af1a
+    projectPath: Temp\UnityTempFile-d292684ce576fdc419bd0f14aa79af1a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-d5b474ed060839641ad59e473df082d8
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-d5b474ed060839641ad59e473df082d8
+    projectPath: Temp\UnityTempFile-d5b474ed060839641ad59e473df082d8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-d7c037bb81457244f8d855814a8af1a4
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-d7c037bb81457244f8d855814a8af1a4
+    projectPath: Temp\UnityTempFile-d7c037bb81457244f8d855814a8af1a4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-d8c7e446b86ad8741b6282d36b85a5ae
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-d8c7e446b86ad8741b6282d36b85a5ae
+    projectPath: Temp\UnityTempFile-d8c7e446b86ad8741b6282d36b85a5ae
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-dea5c3edb080a364a86e09103a4b193d
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-dea5c3edb080a364a86e09103a4b193d
+    projectPath: Temp\UnityTempFile-dea5c3edb080a364a86e09103a4b193d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-e2dd65427b659e7498ae6287480d0a64
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-e2dd65427b659e7498ae6287480d0a64
+    projectPath: Temp\UnityTempFile-e2dd65427b659e7498ae6287480d0a64
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-e3fc65a2d522593478490ff23454230a
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-e3fc65a2d522593478490ff23454230a
+    projectPath: Temp\UnityTempFile-e3fc65a2d522593478490ff23454230a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-ee7bf6677aed0a14998eae972e061695
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-ee7bf6677aed0a14998eae972e061695
+    projectPath: Temp\UnityTempFile-ee7bf6677aed0a14998eae972e061695
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-f1f64153454b7c2419a8c77ce88092a3
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-f1f64153454b7c2419a8c77ce88092a3
+    projectPath: Temp\UnityTempFile-f1f64153454b7c2419a8c77ce88092a3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-f699976a7300f4a458b29c56b5d579db
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-f699976a7300f4a458b29c56b5d579db
+    projectPath: Temp\UnityTempFile-f699976a7300f4a458b29c56b5d579db
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: MinisculeSpaceProgram\Temp\UnityTempFile-fb865cb11d5161945b90aead927304f2
+    fullPath: C:\Users\droid\Unity-Intro\MinisculeSpaceProgram\Temp\UnityTempFile-fb865cb11d5161945b90aead927304f2
+    projectPath: Temp\UnityTempFile-fb865cb11d5161945b90aead927304f2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
