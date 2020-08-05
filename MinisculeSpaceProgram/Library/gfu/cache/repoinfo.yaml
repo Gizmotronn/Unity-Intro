@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-08-04T21:01:07.585+08:00
-  initializedAtString: 2020-08-04T21:01:07.585+08:00
+  lastUpdatedAtString: 2020-08-05T09:25:27.495+08:00
+  initializedAtString: 2020-08-05T09:25:27.495+08:00
   currentGitRemote:
     name: origin
     url: https://github.com/Gizmotronn/Unity-Intro.git

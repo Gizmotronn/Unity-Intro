@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Earth-Agency_alien.unity
+    guid: d31e1541f69abeb49ac7b3bb156931cf
   m_configObjects: {}
