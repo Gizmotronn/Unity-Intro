@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: 41443130dc9dffe4fb490778928969a3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5902104420366714451
+    second: Left walk_0
+  - first:
+      213: -574228849893904362
+    second: Left walk_1
+  - first:
+      213: -4055673189164060467
+    second: Left walk_2
+  - first:
+      213: -2212802591633391668
+    second: Left walk_3
+  - first:
+      213: -3781805131874059778
+    second: Left walk_4
+  - first:
+      213: -8714013195916810
+    second: Left walk_5
+  - first:
+      213: 3420204057743706372
+    second: Left walk_6
+  - first:
+      213: -4806540221736087698
+    second: Left walk_7
+  - first:
+      213: -2264221851397514577
+    second: Left walk_8
+  - first:
+      213: 1829526801538285707
+    second: Left walk_9
+  - first:
+      213: -1254943898569473259
+    second: Left walk_10
+  - first:
+      213: 6366254246135768095
+    second: Left walk_11
+  - first:
+      213: -8864402420721050275
+    second: Left walk_12
+  - first:
+      213: -4216660961231545176
+    second: Left walk_13
+  - first:
+      213: 19900047649177542
+    second: Left walk_14
+  - first:
+      213: 7988238208005305771
+    second: Left walk_15
+  - first:
+      213: -6772357729931564417
+    second: Left walk_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +91,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +122,390 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Left walk_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3599
+        width: 422
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356883b13bc78e150800000000000000
+      internalID: 5902104420366714451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_1
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 3599
+        width: 418
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610fa4647ede708f0800000000000000
+      internalID: -574228849893904362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_2
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 3601
+        width: 418
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0fccae8ba57b7c0800000000000000
+      internalID: -4055673189164060467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_3
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3601
+        width: 419
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfb0af44cb8a41e0800000000000000
+      internalID: -2212802591633391668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3097
+        width: 422
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9b5e8f444548bc0800000000000000
+      internalID: -3781805131874059778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_5
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 3097
+        width: 418
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9a3e2b6aa01eff0800000000000000
+      internalID: -8714013195916810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_6
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 3095
+        width: 418
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409c9213871077f20800000000000000
+      internalID: 3420204057743706372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_7
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3095
+        width: 419
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f0bcc622dbb4db0800000000000000
+      internalID: -4806540221736087698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2589
+        width: 422
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa16c6f83ed390e0800000000000000
+      internalID: -2264221851397514577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2589
+        width: 418
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b800fb8cee8c36910800000000000000
+      internalID: 1829526801538285707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_10
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2591
+        width: 418
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51309b85c2b859ee0800000000000000
+      internalID: -1254943898569473259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_11
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 2591
+        width: 418
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14aebac18a795850800000000000000
+      internalID: 6366254246135768095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2087
+        width: 422
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d1fc6c6f05bf480800000000000000
+      internalID: -8864402420721050275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_13
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2087
+        width: 418
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac598352396b75c0800000000000000
+      internalID: -4216660961231545176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_14
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2085
+        width: 418
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf7427ecf2b64000800000000000000
+      internalID: 19900047649177542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_15
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 2085
+        width: 418
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5fb51a35cebde60800000000000000
+      internalID: 7988238208005305771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left walk_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1579
+        width: 422
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7aee8fa680c302a0800000000000000
+      internalID: -6772357729931564417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

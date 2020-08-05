@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: 1fc48b3ea050e4b488ef2aee12e8d208
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7840080485467512898
+    second: Up walk_0
+  - first:
+      213: 5529081274445202170
+    second: Up walk_1
+  - first:
+      213: -3153019278615924728
+    second: Up walk_2
+  - first:
+      213: -5563118042061158207
+    second: Up walk_3
+  - first:
+      213: 5647669560051358139
+    second: Up walk_4
+  - first:
+      213: 1289233053662797611
+    second: Up walk_5
+  - first:
+      213: 286423181061875687
+    second: Up walk_6
+  - first:
+      213: -6635000765395509464
+    second: Up walk_7
+  - first:
+      213: -4157929313567746629
+    second: Up walk_8
+  - first:
+      213: -3888678852384566252
+    second: Up walk_9
+  - first:
+      213: -2916898536812925238
+    second: Up walk_10
+  - first:
+      213: -4953933272289456244
+    second: Up walk_11
+  - first:
+      213: 1195709115501552828
+    second: Up walk_12
+  - first:
+      213: -7215039016787896450
+    second: Up walk_13
+  - first:
+      213: 6727470717685861417
+    second: Up walk_14
+  - first:
+      213: -3193558741424014454
+    second: Up walk_15
+  - first:
+      213: -2519256832662130138
+    second: Up walk_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +91,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +122,390 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Up walk_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3607
+        width: 432
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf9c354650723390800000000000000
+      internalID: -7840080485467512898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_1
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 3607
+        width: 432
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af20291ff1e3bbc40800000000000000
+      internalID: 5529081274445202170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_2
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 3607
+        width: 434
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800b328eba93e34d0800000000000000
+      internalID: -3153019278615924728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_3
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 3607
+        width: 436
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8c06b8d95dbc2b0800000000000000
+      internalID: -5563118042061158207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3091
+        width: 436
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9d5afca8d806e40800000000000000
+      internalID: 5647669560051358139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_5
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 3091
+        width: 432
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f5344b1a644e110800000000000000
+      internalID: 1289233053662797611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_6
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 3091
+        width: 434
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e761aa9d5499f300800000000000000
+      internalID: 286423181061875687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_7
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 3091
+        width: 434
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fd72625fdbbe3a0800000000000000
+      internalID: -6635000765395509464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2575
+        width: 432
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb55c97a1511c46c0800000000000000
+      internalID: -4157929313567746629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_9
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 2575
+        width: 432
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4145b06df23a80ac0800000000000000
+      internalID: -3888678852384566252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_10
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 2575
+        width: 434
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acea8633c381587d0800000000000000
+      internalID: -2916898536812925238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_11
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 2575
+        width: 436
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fc2389fe7104bb0800000000000000
+      internalID: -4953933272289456244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2059
+        width: 434
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4aa2cfa13089010800000000000000
+      internalID: 1195709115501552828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_13
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 2059
+        width: 432
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7716cbbd380fdb90800000000000000
+      internalID: -7215039016787896450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_14
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 2059
+        width: 434
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c028c59f6cc5d50800000000000000
+      internalID: 6727470717685861417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_15
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 2059
+        width: 434
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bf310be333ea3d0800000000000000
+      internalID: -3193558741424014454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up walk_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1543
+        width: 432
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622b23f124dc90dd0800000000000000
+      internalID: -2519256832662130138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -41,8 +41,16 @@ public abstract class Character : MonoBehaviour {
         //Makes sure that the player moves
         transform.Translate(direction * speed * Time.deltaTime);
 
-        //Animate's the Player's movement
-        AnimateMovement(direction);
+        // Setting walk layer (see SetLayerWeight in AnimateMovement()) - if the player's direction is actually changing/player is moving
+        if (direction.x != 0 || direction.y != 0)
+        {            
+            //Animate's the Player's movement
+            AnimateMovement(direction);
+        }
+        else // Set back to idle layer when object not moving
+        {
+            animator.SetLayerWeight(1/* Idle layer = 1st layer, 0 on index*/, 0);  // Sets walk layer weight to 0
+        }
     }
 
     /// <summary>
@@ -54,5 +62,8 @@ public abstract class Character : MonoBehaviour {
         //Sets the animation parameter so that he faces the correct direction
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);
+
+        // Change layer weight - idle & walk
+        animator.SetLayerWeight(1 /* indexing - 2nd layer, #1 on index */, 1 /*Set the weight to = 1, i.e. for it to be showing */); // The walk layer on the player is the second overall animation layer
     }
 }
