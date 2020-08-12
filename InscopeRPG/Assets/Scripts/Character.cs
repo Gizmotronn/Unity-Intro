@@ -13,6 +13,9 @@ public abstract class Character : MonoBehaviour {
     [SerializeField]
     private float speed;
 
+    /// <summary>
+    /// A reference to the character's animator
+    /// </summary>
     private Animator animator;
 
     /// <summary>
@@ -20,15 +23,15 @@ public abstract class Character : MonoBehaviour {
     /// </summary>
     protected Vector2 direction;
 
-    // Use this for initialization
-    void Start () {
+    protected virtual void Start()
+    {
         animator = GetComponent<Animator>();
-	}
-	
-	/// <summary>
+    }
+
+    /// <summary>
     /// Update is marked as virtual, so that we can override it in the subclasses
     /// </summary>
-	protected virtual void Update ()
+    protected virtual void Update ()
     {
         Move();
 	}
@@ -41,16 +44,18 @@ public abstract class Character : MonoBehaviour {
         //Makes sure that the player moves
         transform.Translate(direction * speed * Time.deltaTime);
 
-        // Setting walk layer (see SetLayerWeight in AnimateMovement()) - if the player's direction is actually changing/player is moving
+        //Checks if we are moving or standing still, if we are moving then we need to play the move animation
         if (direction.x != 0 || direction.y != 0)
-        {            
+        {
             //Animate's the Player's movement
             AnimateMovement(direction);
         }
-        else // Set back to idle layer when object not moving
+        else
         {
-            animator.SetLayerWeight(1/* Idle layer = 1st layer, 0 on index*/, 0);  // Sets walk layer weight to 0
+            //Makes sure that we will go back to idle when we aren't pressing any keys.
+            animator.SetLayerWeight(1, 0);
         }
+
     }
 
     /// <summary>
@@ -59,11 +64,10 @@ public abstract class Character : MonoBehaviour {
     /// <param name="direction"></param>
     public void AnimateMovement(Vector2 direction)
     {
+        animator.SetLayerWeight(1, 1);
+
         //Sets the animation parameter so that he faces the correct direction
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);
-
-        // Change layer weight - idle & walk
-        animator.SetLayerWeight(1 /* indexing - 2nd layer, #1 on index */, 1 /*Set the weight to = 1, i.e. for it to be showing */); // The walk layer on the player is the second overall animation layer
     }
 }

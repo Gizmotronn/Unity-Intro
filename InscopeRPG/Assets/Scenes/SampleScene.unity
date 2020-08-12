@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  health: {fileID: 280182784}
+  mana: {fileID: 811528643}
 --- !u!95 &169568340
 Animator:
   serializedVersion: 3
@@ -323,6 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05106038d1b38ba4197411bb6df08856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05106038d1b38ba4197411bb6df08856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 0
 --- !u!1 &901620246
 GameObject:
   m_ObjectHideFlags: 0
