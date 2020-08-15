@@ -44,7 +44,7 @@ public class Player : Character
     protected override void Update()
     {
         //Executes the GetInput function
-        GetInput();
+        GetInput(); // For user input
 
         base.Update();
     }
@@ -57,7 +57,6 @@ public class Player : Character
         direction = Vector2.zero;
 
         ///THIS IS USED FOR DEBUGGING ONLY
-        ///
         if (Input.GetKeyDown(KeyCode.I))
         {
             health.MyCurrentValue -= 10;
