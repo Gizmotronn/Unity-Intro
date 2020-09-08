@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 483746357}
   - component: {fileID: 483746356}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,8 +196,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483746355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0.81, z: -2.07237}
-  m_LocalScale: {x: 2.7511888, y: 2.7276638, z: 1}
+  m_LocalPosition: {x: 0.186, y: -0.2, z: -2.07237}
+  m_LocalScale: {x: 4.2234135, y: 3.39977, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -360,8 +360,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117167108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 2.33, y: 2.23, z: -1}
+  m_LocalPosition: {x: -0.022, y: -1.146, z: -1}
+  m_LocalScale: {x: 3.4391866, y: 2.7301164, z: -1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
