@@ -29,6 +29,9 @@ public class Player : Character
     /// </summary>
     private float initMana = 50;
 
+    [SerializeField]
+    private GameObject[] spellPrefab;
+
     protected override void Start()
     {
 
@@ -44,7 +47,7 @@ public class Player : Character
     protected override void Update()
     {
         //Executes the GetInput function
-        GetInput(); // For user input
+        GetInput();
 
         base.Update();
     }
@@ -68,7 +71,6 @@ public class Player : Character
             mana.MyCurrentValue += 10;
         }
 
-
         if (Input.GetKey(KeyCode.W)) //Moves up
         {
             direction += Vector2.up;
@@ -85,57 +87,35 @@ public class Player : Character
         {
             direction += Vector2.right;
         }
+        if (Input.GetKeyDown(KeyCode.Space)) //Makes the player attack
+        {
+            if (!isAttacking && !IsMoving) //Chcks if we are able to attack
+            {
+                attackRoutine = StartCoroutine(Attack());
+            }
+            
+        }
     }
-}
-
-
-/* using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-/// <summary>
-/// This is the player script, it contains functionality that is specific to the Player
-/// </summary>
-public class Player : Character
-{
-
-    [SerializeField]
-    private Stat health;
-
-	/// <summary>
-    /// We are overriding the characters update function, so that we can execute our own functions
-    /// </summary>
-	protected override void Update ()
-    {
-        //Executes the GetInput function
-        GetInput();
-        health.myCurrentValue = 100;
-
-        base.Update();
-	}
 
     /// <summary>
-    /// Listen's to the players input
+    /// A co routine for attacking
     /// </summary>
-    private void GetInput()
+    /// <returns></returns>
+    private IEnumerator Attack()
     {
-        direction = Vector2.zero;
+        isAttacking = true; //Indicates if we are attacking
 
-        if (Input.GetKey(KeyCode.W)) //Moves up
-        {
-            direction += Vector2.up;
-        }
-        if (Input.GetKey(KeyCode.A)) //Moves left
-        {
-            direction += Vector2.left; //Moves down
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            direction += Vector2.down;
-        }
-        if (Input.GetKey(KeyCode.D)) //Moves right
-        {
-            direction += Vector2.right;
-        }
+        myAnimator.SetBool("attack", isAttacking); //Starts the attack animation
+
+        yield return new WaitForSeconds(1); //This is a hardcoded cast time, for debugging
+
+        CastSpell();
+
+        StopAttack(); //Ends the attack
     }
-} */
+
+    public void CastSpell()
+    {
+        Instantiate(spellPrefab[0], transform.position, Quaternion.identity);
+    }
+}
