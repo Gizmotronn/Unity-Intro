@@ -87,11 +87,11 @@ public class Player : Character
         {
             direction += Vector2.right;
         }
-        if (Input.GetKeyDown(KeyCode.Space)) //Makes the player attack
+        if (Input.GetKeyDown(KeyCode.Space)) //Makes the player attack when the space bar is pressed
         {
             if (!isAttacking && !IsMoving) //Chcks if we are able to attack
             {
-                attackRoutine = StartCoroutine(Attack());
+                attackRoutine = StartCoroutine(Attack()); // https://answers.unity.com/questions/1004821/what-are-ienumerator-and-coroutine.html#:~:text=The%20coroutine%20is%20the%20object,IEnumerator%20MyCoroutine()%7B
             }
             
         }
