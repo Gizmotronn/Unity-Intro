@@ -5,7 +5,8 @@ using UnityEngine;
 /// <summary>
 /// This is an abstract class that all characters needs to inherit from
 /// </summary>
-public abstract class Character : MonoBehaviour {
+public abstract class Character : MonoBehaviour
+{
 
     /// <summary>
     /// The Player's movement speed
@@ -16,16 +17,46 @@ public abstract class Character : MonoBehaviour {
     /// <summary>
     /// A reference to the character's animator
     /// </summary>
-    private Animator animator;
+    protected Animator myAnimator;
 
     /// <summary>
     /// The Player's direction
     /// </summary>
     protected Vector2 direction;
 
+    /// <summary>
+    /// The Character's rigidbody
+    /// </summary>
+    private Rigidbody2D myRigidbody;
+
+    /// <summary>
+    /// indicates if the character is attacking or not
+    /// </summary>
+    protected bool isAttacking = false;
+
+    /// <summary>
+    /// A reference to the attack coroutine
+    /// </summary>
+    protected Coroutine attackRoutine;
+    
+    /// <summary>
+    /// Indicates if character is moving or not
+    /// </summary>
+    public bool IsMoving
+    {
+        get
+        {
+            return direction.x != 0 || direction.y != 0;
+        }
+    }
+
     protected virtual void Start()
     {
-        animator = GetComponent<Animator>();
+        //Makes a reference to the rigidbody2D
+        myRigidbody = GetComponent<Rigidbody2D>();
+
+        //Makes a reference to the character's animator
+        myAnimator = GetComponent<Animator>();
     }
 
     /// <summary>
@@ -33,8 +64,13 @@ public abstract class Character : MonoBehaviour {
     /// </summary>
     protected virtual void Update ()
     {
-        Move();
+        HandleLayers();
 	}
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
 
     /// <summary>
     /// Moves the player
@@ -42,32 +78,66 @@ public abstract class Character : MonoBehaviour {
     public void Move()
     {
         //Makes sure that the player moves
-        transform.Translate(direction * speed * Time.deltaTime);
+        myRigidbody.velocity = direction.normalized * speed;
+    }
+
+    /// <summary>
+    /// Makes sure that the right animation layer is playing
+    /// </summary>
+    public void HandleLayers()
+    {
+        
 
         //Checks if we are moving or standing still, if we are moving then we need to play the move animation
-        if (direction.x != 0 || direction.y != 0)
+        if (IsMoving)
         {
-            //Animate's the Player's movement
-            AnimateMovement(direction);
+            ActivateLayer("WalkLayer");
+
+            //Sets the animation parameter so that he faces the correct direction
+            myAnimator.SetFloat("x", direction.x);
+            myAnimator.SetFloat("y", direction.y);
+
+            StopAttack();
+        }
+        else if (isAttacking)
+        {
+            ActivateLayer("AttackLayer");
         }
         else
         {
             //Makes sure that we will go back to idle when we aren't pressing any keys.
-            animator.SetLayerWeight(1, 0);
+            ActivateLayer("IdleLayer");
         }
-
     }
 
     /// <summary>
-    /// Makes the player animate in the correct direction
+    /// Activates an animation layer based on a string
     /// </summary>
-    /// <param name="direction"></param>
-    public void AnimateMovement(Vector2 direction)
+    public void ActivateLayer(string layerName)
     {
-        animator.SetLayerWeight(1, 1);
+        for (int i = 0; i < myAnimator.layerCount; i++)
+        {
+            myAnimator.SetLayerWeight(i, 0);
+        }
 
-        //Sets the animation parameter so that he faces the correct direction
-        animator.SetFloat("x", direction.x);
-        animator.SetFloat("y", direction.y);
+        myAnimator.SetLayerWeight(myAnimator.GetLayerIndex(layerName),1);
+    }
+
+    /// <summary>
+    /// Stops the attack
+    /// </summary>
+    public void StopAttack()
+    {
+        isAttacking = false; //Makes sure that we are not attacking
+
+        myAnimator.SetBool("attack", isAttacking); //Stops the attack animation
+
+        if (attackRoutine != null) //Checks if we have a reference to an co routine
+        {
+            StopCoroutine(attackRoutine);
+
+        }
+
+
     }
 }
