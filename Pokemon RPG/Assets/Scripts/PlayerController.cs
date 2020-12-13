@@ -6,7 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public float moveSpeed;
 
-    public bool isMoving;
+    private bool isMoving;
     private Vector2 input;
 
     // Start is called before the first frame update
@@ -19,7 +19,15 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         if (!isMoving) {
+            input.x = Input.GetAxisRaw("Horizontal");
+            input.y = Input.GetAxisRaw("Vertical");
+        }
 
+        if (input != Vector2.zero)
+        {
+            var targetPost = transform.position;
+            targetPos.x += input.x;
+            targetPost.y += input.y;
         }
     }
 }
