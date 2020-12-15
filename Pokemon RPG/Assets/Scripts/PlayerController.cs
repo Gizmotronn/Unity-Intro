@@ -1,8 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
 
@@ -21,6 +21,8 @@ public class NewBehaviourScript : MonoBehaviour
         if (!isMoving) {
             input.x = Input.GetAxisRaw("Horizontal"); // 10:05 ep 1 - see notion for video link
             input.y = Input.GetAxisRaw("Vertical");
+
+            if (input.x != 0) input.y = 0; // Allowing the player to move diagonally.
         }
 
         if (input != Vector2.zero)
