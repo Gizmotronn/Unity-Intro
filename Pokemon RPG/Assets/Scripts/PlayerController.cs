@@ -44,4 +44,8 @@ public class PlayerController : MonoBehaviour
         //isMoving = false;
     }
     
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
