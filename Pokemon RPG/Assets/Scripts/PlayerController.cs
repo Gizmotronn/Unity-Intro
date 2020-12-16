@@ -40,12 +40,6 @@ public class PlayerController : MonoBehaviour
             yield return null; // Prevents execution of StartCoroutine(Move(_)) (see above), when the player is at `targetPos`
         }
         else isMoving = false;
-        //transform.position = targetPos;
-        //isMoving = false;
     }
     
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
