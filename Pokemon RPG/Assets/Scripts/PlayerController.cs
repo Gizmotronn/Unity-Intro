@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
         if (input != Vector2.zero)
         {
+            animator.SetBool("isMoving", true);
             animator.SetFloat("moveX", input.x);
             animator.SetFloat("moveY", input.y);
 
@@ -37,6 +38,9 @@ public class PlayerController : MonoBehaviour
             targetPos.y += input.y;
 
             StartCoroutine(Move(targetPos));
+        }else
+        {
+            animator.SetBool("isMoving", false);
         }
     }
 
@@ -44,7 +48,6 @@ public class PlayerController : MonoBehaviour
 
         if ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon) // Checks if the player is away from the target position - where we want to be
         {
-            isMoving = true;
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null; // Prevents execution of StartCoroutine(Move(_)) (see above), when the player is at `targetPos`
         }
