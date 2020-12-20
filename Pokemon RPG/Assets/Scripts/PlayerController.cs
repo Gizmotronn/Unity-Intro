@@ -9,6 +9,12 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Vector2 input;
 
+    private Animator animator;
+
+    private void Awake() {
+        animator = GetComponent<Animator>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +29,9 @@ public class PlayerController : MonoBehaviour
 
         if (input != Vector2.zero)
         {
+            animator.SetFloat("moveX", input.x);
+            animator.SetFloat("moveY", input.y);
+
             Vector3 targetPos = transform.position;
             targetPos.x += input.x;
             targetPos.y += input.y;
@@ -40,8 +49,6 @@ public class PlayerController : MonoBehaviour
             yield return null; // Prevents execution of StartCoroutine(Move(_)) (see above), when the player is at `targetPos`
         }
         else isMoving = false;
-        //transform.position = targetPos;
-        //isMoving = false;
     }
     
 }
