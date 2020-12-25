@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
+    public LayerMask solidObjectsLayer;
 
     private bool isMoving;
     private Vector2 input;
@@ -37,7 +38,8 @@ public class PlayerController : MonoBehaviour
             targetPos.x += input.x;
             targetPos.y += input.y;
 
-            StartCoroutine(Move(targetPos));
+            if (IsWalkable(targetPos))
+                StartCoroutine(Move(targetPos));
         }else
         {
             animator.SetBool("isMoving", false);
@@ -54,4 +56,12 @@ public class PlayerController : MonoBehaviour
         else isMoving = false;
     }
     
+    private bool IsWalkable(Vector3 targetPos) { // Check if the tile position is walkable
+        if (Physics2D.OverlapCircle(targetPos, 0.3f, SolidObjects, solidObjectsLayer) != null) // Tile is not walkable if the IF statement is not null, as there is something at that Vector3 position // Solid objects layer as third parameter
+        { 
+            return false;
+        }
+
+        return true; // Call Move Coroutine if we return true
+    }
 }
