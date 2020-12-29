@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
     }
     
     private bool IsWalkable(Vector3 targetPos) { // Check if the tile position is walkable
-        if (Physics2D.OverlapCircle(targetPos, 0.3f, SolidObjects, solidObjectsLayer) != null) // Tile is not walkable if the IF statement is not null, as there is something at that Vector3 position // Solid objects layer as third parameter
+        if (Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectsLayer) != null) // Tile is not walkable if the IF statement is not null, as there is something at that Vector3 position // Solid objects layer as third parameter
         { 
             return false;
         }
