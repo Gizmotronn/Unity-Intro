@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
     public LayerMask solidObjectsLayer;
+    public LayerMask LongGrass;
 
     private bool isMoving;
     private Vector2 input;
@@ -54,6 +55,8 @@ public class PlayerController : MonoBehaviour
             yield return null; // Prevents execution of StartCoroutine(Move(_)) (see above), when the player is at `targetPos`
         }
         else isMoving = false;
+
+        CheckForEncounters();
     }
     
     private bool IsWalkable(Vector3 targetPos) { // Check if the tile position is walkable
@@ -63,5 +66,14 @@ public class PlayerController : MonoBehaviour
         }
 
         return true; // Call Move Coroutine if we return true
+    }
+
+    private void CheckForEncounters()
+    {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, grassLayer) != null) { // If not null the player is walking in the long grass aka in contact with a gameObject with LongGrass layer
+            if (Random.Range(1,101) <= 10)
+            {
+                Debug.Log("Encountered a wild alien!")
+            }
     }
 }
