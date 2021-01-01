@@ -6528,6 +6528,9 @@ MonoBehaviour:
   solidObjectsLayer:
     serializedVersion: 2
     m_Bits: 256
+  grassLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!212 &741721365
 SpriteRenderer:
   m_ObjectHideFlags: 0
