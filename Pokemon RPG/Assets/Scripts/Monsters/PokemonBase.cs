@@ -25,6 +25,21 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int SpAttack;
     [SerializeField] int SpDefense;
     [SerializeField] int speed;
+
+
+    /* Properties - expose private outside of class 
+    public string GetName() {
+        return name;
+    }*/ 
+
+    public string Name {
+        get { return name; }
+    }
+
+    public string Description
+    { // Specify value to be returned and then get the property
+        get { return description; } // Up to 11.08 in Part 5
+    }
 }
 
 public enum PokemonType { // Will update this with our own list later
