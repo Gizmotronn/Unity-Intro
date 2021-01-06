@@ -40,6 +40,52 @@ public class PokemonBase : ScriptableObject
     { // Specify value to be returned and then get the property
         get { return description; } // Up to 11.08 in Part 5
     }
+
+    /*public Sprite frontSprite {
+        get { return frontSprite; }
+    }
+
+    public Sprite backSprite
+    { // Specify value to be returned and then get the property
+        get { return backSprite; } // Up to 11.08 in Part 5
+    }
+
+    public PokemonType type1 {
+        get { return type1; }
+    }
+
+    public PokemonType type2
+    { // Specify value to be returned and then get the property
+        get { return type2; } // Up to 11.08 in Part 5
+    }
+
+    public int MaxHp {
+        get { return MaxHp; }
+    }
+
+    public int Attack
+    { // Specify value to be returned and then get the property
+        get { return Attack; } // Up to 11.08 in Part 5
+    }
+
+    public int Defense {
+        get { return defense; }
+    }
+
+    public int SpAttack
+    { // Specify value to be returned and then get the property
+        get { return SpAttack; } // Up to 11.08 in Part 5
+    }
+
+    public int SpDefense
+    { // Specify value to be returned and then get the property
+        get { return SpDefense; } // Up to 11.08 in Part 5
+    } 
+
+    public int Speed
+    { // Specify value to be returned and then get the property
+        get { return Speed; } // Up to 11.08 in Part 5
+    }       */
 }
 
 public enum PokemonType { // Will update this with our own list later
