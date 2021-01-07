@@ -1,37 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Pokemon
-{
-    PokemonBase _base; 
-    int level; // Level of the Pokemon
+public class Pokemon {
+    PokemonBase _base;
+    int level;
 
-    public Pokemon(PokemonBase pBase, int pLevel){
+    public Pokemon(PokemonBase pBase, int pLevel)
+    {
         _base = pBase;
-        level = pLevel; // OOP like in Python based on attributes of a class, in this case a class instance of a "Pokemon"
+        level = pLevel;
 
-        _base.name;
+        //_base.Name;
     }
 
-    // Calculate the value of the stats depending on the level
     public int Attack {
-        get { return Math.FloorToInt((_base.Attack * level) / 100f) + 5; }  // Bulbapedia formula
+        get { return Math.FloorToInt((_base.Attack * level) / 100f) +5; }
     }
-
+    
     public int Defense {
-        get { return Math.FloorToInt((_base.Defense * level) / 100f) + 5; } 
+        get { return Math.FloorToInt((_base.Defense * level) / 100f) +5; }
     }
 
     public int SpAttack {
-        get { return Math.FloorToInt((_base.SpAttack * level) / 100f) + 5; } 
+        get { return Math.FloorToInt((_base.SpAttack * level) / 100f) +5; }
     }
 
     public int SpDefense {
-        get { return Math.FloorToInt((_base.SpDefense * level) / 100f) + 5; } 
+        get { return Math.FloorToInt((_base.SpDefense * level) / 100f) +5; }
     }
 
     public int MaxHp {
-        get { return Math.FloorToInt((_base.MaxHp * level) / 100f) + 10; } 
+        get { return Math.FloorToInt((_base.MaxHp * level) / 100f) +5; }
     }
+
+    public int Speed {
+        get { return Math.FloorToInt((_base.Speed * level) / 100f) +10; }
+    }                    
 }

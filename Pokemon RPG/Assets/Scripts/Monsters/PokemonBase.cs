@@ -6,90 +6,78 @@ using UnityEngine;
 
 public class PokemonBase : ScriptableObject
 {
-    [SerializeField] string name; // We need to use this variable outside of the class
-        
+    [SerializeField] string  name;
     [TextArea]
-    [SerializeField] string description;
+    [SerializeField] string  description;
 
-    // Variables for sprites
+    //# Sprite fields
     [SerializeField] Sprite frontSprite;
-    [SerializeField] Sprite backSprite; // We need both the front and back sprites of the monsters in the battle system (pocket monsters)
+    [SerializeField] Sprite backSprite;
 
+    // Pokemon Types - uses enum
     [SerializeField] PokemonType type1;
     [SerializeField] PokemonType type2;
 
-    // Pokemon Stats
+    // Base stats of Pokemon
     [SerializeField] int maxHp;
-    [SerializeField] int Attack;
-    [SerializeField] int Defense;
-    [SerializeField] int SpAttack;
-    [SerializeField] int SpDefense;
+    [SerializeField] int attack;
+    [SerializeField] int defense;
+    [SerializeField] int spAttack;
+    [SerializeField] int spDefense;
     [SerializeField] int speed;
-
-
-    /* Properties - expose private outside of class 
-    public string GetName() {
-        return name;
-    }*/ 
 
     public string Name {
         get { return name; }
     }
 
-    public string Description
-    { // Specify value to be returned and then get the property
-        get { return description; } // Up to 11.08 in Part 5
+    public string Description {
+        get { return description; }
     }
 
-    /*public Sprite frontSprite {
+    public Sprite FrontSprite {
         get { return frontSprite; }
     }
 
-    public Sprite backSprite
-    { // Specify value to be returned and then get the property
-        get { return backSprite; } // Up to 11.08 in Part 5
+    public Sprite BackSprite {
+        get { return backSprite; }
     }
 
-    public PokemonType type1 {
+    public PokemonType Type1 {
         get { return type1; }
     }
 
-    public PokemonType type2
-    { // Specify value to be returned and then get the property
-        get { return type2; } // Up to 11.08 in Part 5
+    public PokemonType Type2 {
+        get { return type2; }
     }
 
     public int MaxHp {
-        get { return MaxHp; }
+        get { return maxHp; }
     }
 
-    public int Attack
-    { // Specify value to be returned and then get the property
-        get { return Attack; } // Up to 11.08 in Part 5
+    public int Attack {
+        get { return attack; }
     }
 
     public int Defense {
         get { return defense; }
     }
 
-    public int SpAttack
-    { // Specify value to be returned and then get the property
-        get { return SpAttack; } // Up to 11.08 in Part 5
+    public int SpAttack {
+        get { return spAttack; }
     }
 
-    public int SpDefense
-    { // Specify value to be returned and then get the property
-        get { return SpDefense; } // Up to 11.08 in Part 5
-    } 
+    public int SpDefense {
+        get { return spDefense; }
+    }
 
-    public int Speed
-    { // Specify value to be returned and then get the property
-        get { return Speed; } // Up to 11.08 in Part 5
-    }       */
+    public int Speed {
+        get { return speed; }
+    }
+
 }
 
-public enum PokemonType { // Will update this with our own list later
-    none,
+public enum PokemonType {
+    None,
     Normal,
     Fire,
     Water,
@@ -97,7 +85,7 @@ public enum PokemonType { // Will update this with our own list later
     Grass,
     Ice,
     Fighting,
-    Poison,
+    Poision,
     Ground,
     Flying,
     Psychic,
