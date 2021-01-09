@@ -86,11 +86,11 @@ public class PokemonBase : ScriptableObject
 [System.Serializable]
 
 public class LearnableMove {
-    [SerializeField] MoveBase Base; // Reference to MoveBase.cs script
+    [SerializeField] MoveBase moveBase; // Reference to MoveBase.cs script
     [SerializeField] int level;
 
     // Properties to expose the above variables
-    public MoveBase MoveBase { 
+    public MoveBase Base { 
         get { return moveBase; }
     }
 
