@@ -6,29 +6,101 @@ using UnityEngine;
 
 public class PokemonBase : ScriptableObject
 {
-    [SerializeField] string name; // We need to use this variable outside of the class
-        
+    [SerializeField] string  name;
     [TextArea]
-    [SerializeField] string description;
+    [SerializeField] string  description;
 
-    // Variables for sprites
+    //# Sprite fields
     [SerializeField] Sprite frontSprite;
-    [SerializeField] Sprite backSprite; // We need both the front and back sprites of the monsters in the battle system (pocket monsters)
+    [SerializeField] Sprite backSprite;
 
+    // Pokemon Types - uses enum
     [SerializeField] PokemonType type1;
     [SerializeField] PokemonType type2;
 
-    // Pokemon Stats
+    // Base stats of Pokemon
     [SerializeField] int maxHp;
-    [SerializeField] int Attack;
-    [SerializeField] int Defense;
-    [SerializeField] int SpAttack;
-    [SerializeField] int SpDefense;
+    [SerializeField] int attack;
+    [SerializeField] int defense;
+    [SerializeField] int spAttack;
+    [SerializeField] int spDefense;
     [SerializeField] int speed;
+
+    // Learnable moves list
+    [SerializeField] List<LearnableMove> learnableMoves;
+
+    public string Name {
+        get { return name; }
+    }
+
+    public string Description {
+        get { return description; }
+    }
+
+    public Sprite FrontSprite {
+        get { return frontSprite; }
+    }
+
+    public Sprite BackSprite {
+        get { return backSprite; }
+    }
+
+    public PokemonType Type1 {
+        get { return type1; }
+    }
+
+    public PokemonType Type2 {
+        get { return type2; }
+    }
+
+    public int MaxHp {
+        get { return maxHp; }
+    }
+
+    public int Attack {
+        get { return attack; }
+    }
+
+    public int Defense {
+        get { return defense; }
+    }
+
+    public int SpAttack {
+        get { return spAttack; }
+    }
+
+    public int SpDefense {
+        get { return spDefense; }
+    }
+
+    public int Speed {
+        get { return speed; }
+    }
+
+    public List<LearnableMove> LearnableMoves {
+        get { return learnableMoves; }
+    }
+
 }
 
-public enum PokemonType { // Will update this with our own list later
-    none,
+[System.Serializable]
+
+public class LearnableMove {
+    [SerializeField] MoveBase Base; // Reference to MoveBase.cs script
+    [SerializeField] int level;
+
+    // Properties to expose the above variables
+    public MoveBase MoveBase { 
+        get { return moveBase; }
+    }
+
+    public int Level {
+        get { return level; }
+    }
+}
+
+public enum PokemonType {
+    None,
     Normal,
     Fire,
     Water,
@@ -36,7 +108,7 @@ public enum PokemonType { // Will update this with our own list later
     Grass,
     Ice,
     Fighting,
-    Poison,
+    Poision,
     Ground,
     Flying,
     Psychic,
