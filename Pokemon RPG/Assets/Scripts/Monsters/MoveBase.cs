@@ -28,7 +28,7 @@ public class MoveBase : ScriptableObject
         get { return type; }
     }
 
-    public int Power {
+    public int Power { // Level, determines when a Pokemon (based on its level) unlcoks a new move
         get { return power; }
     }
 

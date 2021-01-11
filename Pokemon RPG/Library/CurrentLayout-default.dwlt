@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 129
+  controlID: 132
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -468,20 +468,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Resources/Move
+    - Assets/Game/Resources/Pokemon
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Game/Resources/Move
+  - Assets/Game/Resources/Pokemon
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Git\Unity-Intro\Pokemon RPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92300000
-    m_LastClickedID: 12434
-    m_ExpandedIDs: 000000004c2d00003c2e0000a02f0000324000008e44000000ca9a3b
+    m_SelectedIDs: e6350000
+    m_LastClickedID: 13798
+    m_ExpandedIDs: 00000000482d0000382e00009c2f00002e4000008a44000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -509,7 +509,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c2d00003c2e0000a02f000032400000
+    m_ExpandedIDs: 00000000482d0000382e00009c2f00002e400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,11 +592,10 @@ MonoBehaviour:
     height: 968
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 11400000, guid: 6a0deb6a6cd67f841baf6a7a52ad3a98, type: 2}
+  m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159
@@ -633,9 +632,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1c400000
+      m_SelectedIDs: e4410000
       m_LastClickedID: 0
-      m_ExpandedIDs: 52fbffff
+      m_ExpandedIDs: 72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
