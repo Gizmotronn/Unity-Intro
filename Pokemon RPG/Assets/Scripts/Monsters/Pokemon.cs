@@ -22,7 +22,7 @@ public class Pokemon {
         Moves = new List<Move>();
         foreach (var move in _base.LearnableMoves) { // Loop through the moves that each Pokemon can learn in their Learnable Moves (in the inspector)
             if (move.Level <= level) // If the level of the Pokemon is greater than or equal to the required level:
-                Move.Add(new Move(move.Base)); // Add the move to the Pokemon, accepting move.Base as a parameter
+                Moves.Add(new Move(move.Base)); // Add the move to the Pokemon, accepting move.Base as a parameter
 
                 if (Moves.Count >= 4) // No Pokemon can have more than 4 moves (we may change this when we transition away from the Pokemon base)
                     break;  // So we break the loop once we get to 4, or more, moves being assigned to a single iteration of a single Pokemon
