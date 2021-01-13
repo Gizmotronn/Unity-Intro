@@ -4,8 +4,8 @@ using UnityEngine;
 using System;
 
 public class Pokemon {
-    PokemonBase _base;
-    int level; // // Level, determines when a Pokemon (based on its level) unlcoks a new move
+    public PokemonBase Base { get, set; }
+    public int Level { get, set; } // // Level, determines when a Pokemon (based on its level) unlcoks a new move
 
     public int HP { get; set; } // Creates a private variable behind the scenes
 
@@ -14,14 +14,14 @@ public class Pokemon {
 
     public Pokemon(PokemonBase pBase, int pLevel) // Creating the Pokemon
     {
-        _base = pBase;
-        level = pLevel;
-        HP = _base.MaxHp;
+        Base = pBase;
+        Level = pLevel;
+        HP = MaxHp;
 
         // Generate moves for a Pokemon based on their learnable 
         Moves = new List<Move>();
-        foreach (var move in _base.LearnableMoves) { // Loop through the moves that each Pokemon can learn in their Learnable Moves (in the inspector)
-            if (move.Level <= level) // If the level of the Pokemon is greater than or equal to the required level:
+        foreach (var move in Base.LearnableMoves) { // Loop through the moves that each Pokemon can learn in their Learnable Moves (in the inspector)
+            if (move.Level <= Level) // If the level of the Pokemon is greater than or equal to the required level:
                 Moves.Add(new Move(move.Base)); // Add the move to the Pokemon, accepting move.Base as a parameter
 
                 if (Moves.Count >= 4) // No Pokemon can have more than 4 moves (we may change this when we transition away from the Pokemon base)
