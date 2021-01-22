@@ -337,19 +337,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts/Battle
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts/Battle
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Git\Unity-Intro\Pokemon RPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 502d0000
-    m_LastClickedID: 11600
+    m_SelectedIDs: 7e3f0000
+    m_LastClickedID: 16254
     m_ExpandedIDs: 00000000502d0000402e00003a40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -501,9 +501,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2e470000
-      m_LastClickedID: 18222
-      m_ExpandedIDs: 72fbffff8a460000c2460000cc460000d246000018470000284700002e470000
+      m_SelectedIDs: cc460000
+      m_LastClickedID: 18124
+      m_ExpandedIDs: 72fbffffc2460000cc460000d24600002e470000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
