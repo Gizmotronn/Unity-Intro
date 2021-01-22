@@ -5,7 +5,9 @@ using UnityEngine;
 public class BattleSystem : MonoBehaviour
 {
     [SerializeField] BattleUnit playerUnit; // the playerUnit game object
+    [SerializeField] BattleUnit enemyUnit;
     [SerializeField] BattleHud playerHud;
+    [SerializeField] BattleHud enemyHud;
 
     private void Start() {
         SetupBattle();
@@ -13,6 +15,8 @@ public class BattleSystem : MonoBehaviour
 
     public void SetupBattle() {
         playerUnit.Setup(); // Creates player Pokemon
+        enemyUnit.Setup();
         playerHud.SetData(playerUnit.Pokemon);
+        enemyHud.SetData(enemyUnit.Pokemon);
     }
 }
