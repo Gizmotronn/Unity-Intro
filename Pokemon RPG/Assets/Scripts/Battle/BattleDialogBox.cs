@@ -7,6 +7,16 @@ public class BattleDialogBox : MonoBehaviour
 {
     [SerializeField] Text dialogText; // Reference to the dialogue text
     [SerializeField] int lettersPerSecond;
+    [SerializeField] GameObject actionSelector;
+    [SerializeField] GameObject moveSelector;
+    [SerializeField] GameObject moveDetails;
+    
+    [SerializeField] List<Text> actionTexts;
+    [SerializeField] List<Text> moveTexts; // Player will select from a LIST of actions and moves
+
+    [SerializeField] Text ppText;
+    [SerializeField] Text typeText;
+
 
     public void SetDialog(string dialog){
         dialogText.text = dialog;
@@ -19,5 +29,20 @@ public class BattleDialogBox : MonoBehaviour
             dialogText.text += letter; // After adding each letter wait
             yield return new WaitForSeconds(1f/lettersPerSecond);//30); // Wait for 1/30th of a second after adding each letter. 
         }
+    }
+
+    public void EnableDialogText(bool enabled) {
+        dialogText.enabled = enabled;
+    }
+
+    public void EnableActionSelector(bool enabled)
+    {
+        actionSelector.SetActive(enabled);
+    }
+
+    public void EnableMoveSelector (bool enabled)
+    {
+        moveSelector.SetActive(enabled);
+        moveDetails.SetActive(enabled);
     }
 }
