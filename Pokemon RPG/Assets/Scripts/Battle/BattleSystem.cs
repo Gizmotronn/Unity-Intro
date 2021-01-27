@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy } // List of "states"
+public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy } // List of "states" or sequences in the battle scene
 
 public class BattleSystem : MonoBehaviour
 {
