@@ -17,6 +17,8 @@ public class BattleDialogBox : MonoBehaviour
     [SerializeField] Text ppText;
     [SerializeField] Text typeText;
 
+    [SerializeField] Color highlightedColor;
+
 
     public void SetDialog(string dialog){
         dialogText.text = dialog;
@@ -44,5 +46,17 @@ public class BattleDialogBox : MonoBehaviour
     {
         moveSelector.SetActive(enabled);
         moveDetails.SetActive(enabled);
+    }
+
+    public void UpdateActionSelection(int selected) {
+        // Loop through action text list
+        for (int i=0; i<actionTexts.Count; ++i) {
+            if (i == selectedAction)
+                actionTexts[i].color = highlightedColor;
+            else
+                actionTexts[i].color = Color.black;
+        }
+
+        dialogBox.UpdateActionSelection(currentAction);
     }
 }
