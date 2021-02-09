@@ -48,7 +48,7 @@ public class BattleDialogBox : MonoBehaviour
         moveDetails.SetActive(enabled);
     }
 
-    public void UpdateActionSelection(int selected) {
+    public void UpdateActionSelection(int selectedAction) {
         // Loop through action text list
         for (int i=0; i<actionTexts.Count; ++i) {
             if (i == selectedAction)
@@ -56,7 +56,5 @@ public class BattleDialogBox : MonoBehaviour
             else
                 actionTexts[i].color = Color.black;
         }
-
-        dialogBox.UpdateActionSelection(currentAction);
     }
 }
