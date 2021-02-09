@@ -40,6 +40,13 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnableActionSelector(true); // Pass true as an argument/parameter so the dialog box is enabled
     }
 
+    void PlayerMove() {
+        state = BattleState.PlayerMove;
+        dialogBox.EnableActionSelector(false);
+        dialogBox.EnableDialogText(false);
+        dialogBox.EnableMoveSelector(true);
+    }
+
     private void Update() {
         if (state == BattleState.PlayerAction) {
             HandleActionSelection();
@@ -47,17 +54,33 @@ public class BattleSystem : MonoBehaviour
     }
 
     void HandleActionSelection() {
-        if (input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (currentAction < 1)
                 ++currentAction;
         }
-        else if (input.GetKeyDown(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             if (currentAction > 0)
                 --currentAction;
         }
 
+        dialogBox.UpdateActionSelection(currentAction);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (currentAction == 0)
+            {                
+                // Fight
+                PlayerMove();
+            }
+
+            else if (currentAction == 1) {
+                // Run
+            }
+        }
+
         // Update selection in UI
+        dialogBox.UpdateActionSelection(currentAction);
     }
 }
