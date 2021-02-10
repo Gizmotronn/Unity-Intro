@@ -14,6 +14,7 @@ public class BattleSystem : MonoBehaviour
 
     BattleState state;
     int currentAction;
+    int currentMove;
 
     private void Start() {
         StartCoroutine(SetupBattle());
@@ -28,7 +29,9 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnableActionSelector(false);
         dialogBox.EnableMoveSelector(false);
 
-        yield return dialogBox.TypeDialog($"A wild {playerUnit.Pokemon.Base.Name} appeared."); // Wait for this to be complete before changing the state
+        dialogBox.SetMoveNames(playerUnit.Pokemon.Moves); // Takes function from `BattleDialogBox.cs`
+
+        yield return dialogBox.TypeDialog($"A wild {enemyUnit.Pokemon.Base.Name} appeared."); // Wait for this to be complete before changing the state
         yield return new WaitForSeconds(1f); // Wait for 1 second
 
         PlayerAction(); // Let the player select an action
@@ -50,6 +53,10 @@ public class BattleSystem : MonoBehaviour
     private void Update() {
         if (state == BattleState.PlayerAction) {
             HandleActionSelection();
+        }
+        else if (state == BattleState.PlayerMove)
+        {
+            HandleMoveSelection();
         }
     }
 
@@ -82,5 +89,20 @@ public class BattleSystem : MonoBehaviour
 
         // Update selection in UI
         dialogBox.UpdateActionSelection(currentAction);
+    }
+
+    void HandleMoveSelection() {
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if (currentMove < playerUnit.Pokemon.Moves.Count - 1)
+                ++currentMove;
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if (currentMove > 0)
+                --currentMove;
+        }
+
+        dialogBox.UpdateMoveSelection(currentMove, playerUnit.Pokemon.Moves[currentMove]);
     }
 }
