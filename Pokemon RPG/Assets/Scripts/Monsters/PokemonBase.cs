@@ -108,7 +108,7 @@ public enum PokemonType {
     Grass,
     Ice,
     Fighting,
-    Poision,
+    Poison,
     Ground,
     Flying,
     Psychic,
