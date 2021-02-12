@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
-using System;
+//using System; // Commented out to prevent error with randomness
 
 public class Pokemon {
     public PokemonBase Base { get; set; }
@@ -57,13 +57,13 @@ public class Pokemon {
 
     public bool takeDamage(Move move, Pokemon attacker)
     {
-        float modifiers = Random.range(0.85f; 1f);
+        float modifiers = Random.Range(0.85f, 1f);
         float a = (2 * attacker.Level + 10) / 250f;
         float d = a * move.Base.Power * ((float)attacker.Attack / Defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
         HP -= damage;
-        if (HP < 0)
+        if (HP <= 0)
         {
             HP = 0;
             return true;
@@ -73,6 +73,7 @@ public class Pokemon {
     }       
 
     public Move GetRandomMove() {
-        int r = Random.range()
+        int r = Random.Range(0, Moves.Count);
+        return Moves[r];
     }             
 }
