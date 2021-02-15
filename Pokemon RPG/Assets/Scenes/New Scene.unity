@@ -9206,8 +9206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db72a06b6fc4fa41a9d52dccced4606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogText: {fileID: 1521811785}
   lettersPerSecond: 30
+  highlightedColor: {r: 0, g: 0, b: 1, a: 1}
+  dialogText: {fileID: 1521811785}
   actionSelector: {fileID: 970228319}
   moveSelector: {fileID: 1966755135}
   moveDetails: {fileID: 1558683930}
@@ -9221,7 +9222,6 @@ MonoBehaviour:
   - {fileID: 1815716641}
   ppText: {fileID: 1468719586}
   typeText: {fileID: 411312377}
-  highlightedColor: {r: 0, g: 0, b: 1, a: 0}
 --- !u!1 &1815716638
 GameObject:
   m_ObjectHideFlags: 0

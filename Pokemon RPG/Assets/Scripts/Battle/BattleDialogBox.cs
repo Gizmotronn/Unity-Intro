@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class BattleDialogBox : MonoBehaviour
 {
-    [SerializeField] Text dialogText; // Reference to the dialogue text
     [SerializeField] int lettersPerSecond;
+    [SerializeField] Color highlightedColor;
+
+    [SerializeField] Text dialogText; // Reference to the dialogue text
     [SerializeField] GameObject actionSelector;
     [SerializeField] GameObject moveSelector;
     [SerializeField] GameObject moveDetails;
@@ -16,8 +18,6 @@ public class BattleDialogBox : MonoBehaviour
 
     [SerializeField] Text ppText;
     [SerializeField] Text typeText;
-
-    [SerializeField] Color highlightedColor;
 
 
     public void SetDialog(string dialog){
@@ -49,12 +49,36 @@ public class BattleDialogBox : MonoBehaviour
     }
 
     public void UpdateActionSelection(int selectedAction) {
-        // Loop through action text list
-        for (int i=0; i<actionTexts.Count; ++i) {
+        for (int i=0; i<actionTexts.Count; ++i) {// Loop through action text list
             if (i == selectedAction)
                 actionTexts[i].color = highlightedColor;
             else
                 actionTexts[i].color = Color.black;
+        }
+    }
+
+    public void UpdateMoveSelection(int selectedMove, Move move)
+    {
+        for (int i=0; i<actionTexts.Count; ++i)
+        {
+            if (i == selectedMove)
+                moveTexts[i].color = highlightedColor;
+            else
+                actionTexts[i].color = Color.black;
+        }
+
+        ppText.text = $"PP {move.PP}/15";//"{move.BasePP}";
+        typeText.text = move.Base.Type.ToString(); // Turn the enum to a string
+    }
+
+    public void SetMoveNames(List<Move> moves) {
+        for (int i=0; i<moveTexts.Count; ++i) {
+            if (i < moves.Count) // Some pokemon may have 2, 3 or 4 moves. So we add new move text labels until the number of moves that have labels is equal to moves.count, or the total number of moves
+                moveTexts[i].text = moves[i].Base.Name;
+            else
+            {
+                moveTexts[i].text = "-"; // Move text is empty
+            }            
         }
     }
 }
