@@ -122,11 +122,22 @@ public class TypeChart {
     float [][] chart =
     {
         // Nor Fir Wat
-        /*Nor*/ new float [] { 1f, 1f, 1f },
-        /*For*/ new float [] { 1f,0.5f,0.5f },
-        /*Wat*/ new float [] { 1f, 2f, 0.5f } 
-        /*ELE*/ new float [] {}
-        /*GRS*/ new float [] {}
-        /*POI*/ new float [] {} //https://youtu.be/PvtHnmSy9qc?t=262
+        /*Nor*/ new float [] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*For*/ new float [] { 1f, 0.5f, 0.5f, 1f, 2f, 2f, 1f, 1f },
+        /*Wat*/ new float [] { 1f, 2f, 0.5f, 2f, 0.5f, 1f, 1f, 1f }, 
+        /*ELE*/ new float [] { 1f, 1f, 2f, 0.5f,0.5f, 2f, 1f, 1f },
+        /*GRS*/ new float [] { 1f, 0.5f, 2f, 2f, 0.5f, 1f, 1f, 0.5f },
+        /*POI*/ new float [] { 1f, 1f, 1f, 1f, 2f, 1f, 1f, 1f } 
     };
+
+    public static float GetEffectiveness(PokemonType attackType, PokemonType defenseType)
+    {
+        if (attackType = PokemonType.None || defenseType == PokemonType.None)
+            return 1;
+
+        int row = (int)attackType - 1;
+        int col = (int)defenseType - 1;
+
+        return chart[row][col];
+    }
 }
