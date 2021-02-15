@@ -117,3 +117,16 @@ public enum PokemonType {
     Ghost,
     Dragon
 }
+
+public class TypeChart {
+    float [][] chart =
+    {
+        // Nor Fir Wat
+        /*Nor*/ new float [] { 1f, 1f, 1f },
+        /*For*/ new float [] { 1f,0.5f,0.5f },
+        /*Wat*/ new float [] { 1f, 2f, 0.5f } 
+        /*ELE*/ new float [] {}
+        /*GRS*/ new float [] {}
+        /*POI*/ new float [] {} //https://youtu.be/PvtHnmSy9qc?t=262
+    };
+}
