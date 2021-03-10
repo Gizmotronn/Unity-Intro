@@ -1,6 +1,3 @@
 [submodule "Pokemon RPG/Controllers/Motorbike"]
 	path = Pokemon RPG/Controllers/Motorbike
 	url = https://github.com/randomrok/Unity_Project_2/
-[submodule "modding/modding-tutorial"]
-	path = modding/modding-tutorial
-	url = https://bitbucket.org/G1zmotronn/unity-modding
