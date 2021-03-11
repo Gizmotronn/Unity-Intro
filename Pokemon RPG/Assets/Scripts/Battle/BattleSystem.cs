@@ -53,14 +53,15 @@ public class BattleSystem : MonoBehaviour
     {
         state = BattleState.Busy;
 
-        var move = playerUnit.Pokemon.Moves[currentMove];
+        var Move = playerUnit.Pokemon.Moves[currentMove];
         yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} used {move.Base.Name}");
 
-        var damageDetails = enemyUnit.Pokemon.takeDamage(move, playerUnit.Pokemon);
-        yield return enemyHud.UpdateHP();
-        yield return ShowDamageDetails(damageDetails);
+        yield return new WaitForSeconds(1f);
 
-        if (damageDetails.Fainted) {
+        bool isFainted = enemyUnit.Pokemon.TakeDamage(move, playerUnit.Pokemon);
+        yield return enemyHud.UpdateHP();
+
+        if (isFainted) {
             yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} fainted");
         }
         else
@@ -76,11 +77,12 @@ public class BattleSystem : MonoBehaviour
 
         yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} used {move.Base.Name}");
 
-        var damageDetails = playerUnit.Pokemon.takeDamage(move, enemyUnit.Pokemon);
-        yield return playerHud.UpdateHP();
-        yield return ShowDamageDetails(damageDetails);
+        yield return new WaitForSeconds(1f);
 
-        if (damageDetails.Fainted) {
+        bool isFainted = playerUnit.Pokemon.TakeDamage(move, enemyUnit.Pokemon); // KEEP AN EYE ON THIS IN CASE OF BUGS OR PROBLEMS
+        yield return playerHud.UpdateHP();
+
+        if (isFainted) {
             yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} fainted");
         }
         else
@@ -121,42 +123,11 @@ public class BattleSystem : MonoBehaviour
                 --currentAction;
         }
 
-        dialogBox.UpdateActionSelection(currentAction);
+        dialogBox.UpdateActionSelection(currentAction); // The player is now able to select their action
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z)) // When the "z" key on the keyboard is pressed:
         {
-            if (currentAction == 0)
-            {                
-                // Fight
-                PlayerMove();
-            }
-
-            else if (currentAction == 1) {
-                // Run
-            }
-        }
-
-        // Update selection in UI
-        dialogBox.UpdateActionSelection(currentAction);
-    }
-
-    void HandleMoveSelection() {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            if (currentMove < playerUnit.Pokemon.Moves.Count - 1)
-                ++currentMove;
-        }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            if (currentMove > 0)
-                --currentMove;
-        }
-
-        dialogBox.UpdateMoveSelection(currentMove, playerUnit.Pokemon.Moves[currentMove]);
-        
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            dialogBox.EnableMoveSelector(false);
+            dialogBox.EnableMoveSelector(false); // No longer needed as we're showing the Pokemon moves now
             dialogBox.EnableDialogText(true);
             StartCoroutine(PerformPlayerMove());
         }
