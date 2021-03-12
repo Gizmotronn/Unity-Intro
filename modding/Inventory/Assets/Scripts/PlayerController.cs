@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
-
     public float health;
     public Text healthDisplay;
 
@@ -13,6 +12,9 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 moveVelocity;
+
+    // For Random Encounters Logic
+    public LayerMask treeLayer;
 
     private void Start()
     {
@@ -35,10 +37,24 @@ public class PlayerController : MonoBehaviour {
         else {
             anim.SetBool("isRunning", false);
         }
+
+        CheckForEncounters();
     }
 
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+    }
+
+    private void CheckForEncounters() 
+    {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, treeLayer) != null) 
+        { // If not null the player is walking in the long grass aka in contact with a gameObject with LongGrass layer
+            /*if (Random.Range(1,101) <= 10) // 1 in 10 times when the player walks on grass he will trigger a battle with a "pokemon"
+            {
+                Debug.Log("Encountered a wild alien!");
+            }*/
+            Debug.Log("Encountered a wild alien!");
+        }
     }
 }
