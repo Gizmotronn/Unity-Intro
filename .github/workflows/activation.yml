@@ -1,4 +1,4 @@
-ame: Acquire activation file
+name: Acquire activation file
 on: [push]
 jobs:
   activation:
