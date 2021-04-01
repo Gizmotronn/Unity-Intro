@@ -1,0 +1,32 @@
+name: BuildTest
+
+on:
+  pull_request: {}
+  push: { branches: [master] } # For modern repos this would have to be changed to main, or whatever the default/chosen branch name is
+
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} # Take value from Git(hub) secret `UNITY_LICENSE`
+
+jobs:
+  build:
+    name: Test project
+    runs-on: ubuntu-latest
+    steps:
+
+      # Checkout
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      # Cache files in Library folder
+      - uses: actions/cache@v1.1.0
+        with:
+          path: Library
+          key: Library
+
+      # Test
+      - name: Run tests
+        uses: webbertakken/unity-test-runner@v1.3
+        with:
+          unityVersion: 2019.3.14f1
